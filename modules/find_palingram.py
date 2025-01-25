@@ -1,9 +1,9 @@
-import load_dictionary
+from .load_dictionary import load
 
 
 def find_palingram(dictionary_path: str = "data/2of4brif.txt"):
     # Load the word list and convert to a set for fast lookups
-    word_list = set(load_dictionary.load(dictionary_path))
+    word_list = set(load(dictionary_path))
     palingrams = set()  # Use a set to avoid duplicates
 
     # Iterate through the word list
